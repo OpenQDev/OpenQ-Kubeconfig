@@ -1,0 +1,34 @@
+apiVersion: v1
+clusters:
+  - cluster:
+      certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURKekNDQWcrZ0F3SUJBZ0lDQm5Vd0RRWUpLb1pJaHZjTkFRRUxCUUF3TXpFVk1CTUdBMVVFQ2hNTVJHbG4KYVhSaGJFOWpaV0Z1TVJvd0dBWURWUVFERXhGck9ITmhZWE1nUTJ4MWMzUmxjaUJEUVRBZUZ3MHlNVEE0TXpFeApPVFUxTURsYUZ3MDBNVEE0TXpFeE9UVTFNRGxhTURNeEZUQVRCZ05WQkFvVERFUnBaMmwwWVd4UFkyVmhiakVhCk1CZ0dBMVVFQXhNUmF6aHpZV0Z6SUVOc2RYTjBaWElnUTBFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUIKRHdBd2dnRUtBb0lCQVFEREhESk4zejFqMXpEYzZScHZhUkJQUk5vTVNhQTBxcXRNR0ZvSlJiT1JHN0NHWmZDUQpnUlBCNXlNNVhFaFprR0cvMUdva3V6elVWRUJ1akdha3JoRmZTZnhXYk1CdnRkQlZMTGlscVJuRGwwK0wwWmZECkRLSXIrT0w3ckJhU3hoYktlMk9Sd09vV1ZSWHN1WUtXRVBLL1g0ZFF6Yys5QTFSRmVaSnNTUXcrdWhnUzc1YVkKcGw1Y2J5OEZnOWFGZE1KNU93cFFjL3l4YVpJY0F0eFdyelVaVVpOZkxvbnFReVRmWWhhVzljWmh1cEZXQkJmUQo0ZkRWeW9RbTJqTHEyMFZZcTVpZ1QwWjk5anpERy9kL3JDbmp5Mld3NENWY1EzNUVCNnBNdUlVNFF2WG9vclp2Cm1zamF6MWNNSW4wdWhXUGFibTc3VjNlSFFZalNKRVdEK0lKSEFnTUJBQUdqUlRCRE1BNEdBMVVkRHdFQi93UUUKQXdJQmhqQVNCZ05WSFJNQkFmOEVDREFHQVFIL0FnRUFNQjBHQTFVZERnUVdCQlFKM0ZtM3p4OUF6bEZrbWF6VgpXbmpUTzdhaXBqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFNemNPYjlrZ3ZEOXo2VzliR29nNHloekhWUU5HClRwUEdsMVpETkh4T0JnU21DUnRjTHBDOFNXclJRTGZTaE5OeDIwaTNjN1VuMHlsMHJZNE1tQkM2WHBuN2htMTAKd2pOaGRKNjQwOEJWMllpQ2N2ZFN5VmltaG1JZFNiOVY2M2ZBZVd1SjdaU2ZoaU9JaU1NVG9obU53bWlid2k0aApQSVVMc0hOVmdQbEd1S000YnArd29iZWh3OXBmUEdQd1FpMVhDWitRLzhtbnNUY2FFY0hqbTVTYmNsUk9FcEJPCnQzQ3B1NjZWZnNvdzNCVnBtWFplR1lRVG05RFZudUZJd2tPSFlwSmY5T2YrdnF6VXoxTmlOdzRCeENDcTlMVEwKVlNtOFNiQk16SkJpNHA4a2xKSDlJeTQvdDk0V1J6cFdDSHJ1YTZ3d2tXWmpUNitiYkxocUZGMVd6QT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+      server: https://0130c3f7-da4b-4f4e-8b26-22ea56886b49.k8s.ondigitalocean.com
+    name: do-nyc1-openq
+contexts:
+  - context:
+      cluster: do-nyc1-openq
+      namespace: local
+      user: do-nyc1-openq-admin
+    name: local
+  - context:
+      cluster: do-nyc1-openq
+      namespace: development
+      user: do-nyc1-openq-admin
+    name: do-nyc1-openq
+  - context:
+      cluster: do-nyc1-openq
+      namespace: staging
+      user: do-nyc1-openq-admin
+    name: staging
+  - context:
+      cluster: do-nyc1-openq
+      namespace: production
+      user: do-nyc1-openq-admin
+    name: production
+current-context: development
+kind: Config
+preferences: {}
+users:
+  - name: do-nyc1-openq-admin
+    user:
+      token: 3c45df96226a36c2262c0cfbd6bf6bfe6ac139a94531800362fc424276517236
